@@ -1,0 +1,438 @@
+body {
+    height: 100%;
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    background-color: lightgrey;
+    background-image: url("assets/tempbackground.jpg");
+    background-size: cover;
+}
+
+header {
+    display: none;
+}
+
+aside {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+nav {
+    margin: 1%;
+    width: 100%;
+    height: 60%;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Rockabilly';
+    border-radius: 13%;
+}
+
+.btn {
+    background: #444444;
+    border: 2px solid #fff58b;
+    width: 40vh;
+    height: 10vh;
+    font-size: 4.5vh;
+    text-align: left;
+    letter-spacing: 1.5px;
+    transform: skew(-45deg) rotate(-13deg);
+    margin-left: 10vh;
+}
+
+.btn:hover {
+    background: #fff58b;
+    border: 2px solid #444444;
+    color: #444444;
+}
+
+.btn:focus, .btn-primary:focus {
+    box-shadow: none;
+    background: linear-gradient(to left, #c2ba4c, #fff58b);
+    border: 2px solid #444444;
+    color: #444444;
+}
+
+main {
+    width: 70%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a {
+    color: #000000;
+}
+
+a:hover {
+    color: #ffb700;
+}
+
+.primaryFlyer {
+    width: 80vh;
+    height: 100vh;
+    transform: rotate(0deg);  
+    position: relative;
+}
+
+/* stack of flyers */
+/* about flyer */
+.about {
+    background: linear-gradient(#fa3d28, #f0f065, #0e83e9);
+    width: 54vh;
+    height: 82vh;
+    transform: rotate(6deg);
+    border: 3.5px solid #FFFFFF;
+    position: absolute;
+    z-index: 4;
+    display: flex;
+    flex-direction: column;
+    font-family: AHDN;
+    align-items: center;
+}
+
+.aboutClicked {
+    width: 60vh;
+    height: 95vh;
+    transform: rotate(0deg);
+}
+
+.about h1 {
+    color: #000000;
+    width: 50vh;
+    height: 10vh;
+    margin: 1% auto;
+    font-size: 7.5vh;
+    letter-spacing: 1.5px;
+    text-align: center;
+    z-index: inherit;
+}
+
+.about h2 {
+    color: #000000;
+    width: 50vh;
+    height: 5vh;
+    margin: 5% auto;
+    font-size: 4vh;
+    letter-spacing: 1px;
+    text-align: center;
+    z-index: inherit;
+}
+
+.about h6 {
+    font-family: "Comic Sans MS", sans-serif;
+    font-size: 1.5vh;
+    margin: 2% auto;
+}
+
+.about img {
+    width: 75%;
+    height: 25vh;
+    margin: 0 auto;
+    position: relative;
+    filter: grayscale(100%) contrast(70%);
+    z-index: inherit;
+}
+
+.about p {
+    width: 90%;
+    height: 13vh;
+    margin: 3% auto;
+    text-align: justify;
+    position: relative;
+    font-size: 3vh;
+    letter-spacing: .5px;
+    z-index: inherit;
+}
+
+/* projects flyer */
+.projects {
+    background: linear-gradient(135deg, #84249f, #f96437);
+    width: 54vh;
+    height: 82vh;
+    transform: rotate(-28deg);
+    border: 3px groove #f96437;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    font-family: Flames;
+    z-index: 3;
+}
+
+.projectsClicked {
+    width: 60vh;
+    height: 95vh;
+    transform: rotate(0deg);
+}
+
+.projects h1 {
+    /* look into curving header with jquery */
+    color: #ff8400;
+    text-shadow: 1px 1px #FFFFFF;
+    width: 50vh;
+    height: 10vh;
+    margin: 5% auto;
+    font-size: 12vh;
+    position: relative;
+    text-align: center;
+    letter-spacing: 5px;
+    z-index: inherit;
+}
+
+.projects p {
+    font-size: 4vh;
+    margin: 0 2%;
+    color: #84249f;
+    text-shadow: 1px 1px #FFFFFF;
+}
+
+.projects ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    text-shadow: 1px 1px #FFFFFF;
+    letter-spacing: 1px;
+    font-size: 2.5vh;
+    color: #444444;
+}
+
+#carousel {
+    padding: 10% 2%;
+    height: 53%;
+    z-index: inherit;
+}
+
+/* testimonials flyer */
+.testimonials {
+    background: #FFFFFF;
+    border: 5px solid #FFFFFF;
+    width: 54vh;
+    height: 82vh;
+    transform: rotate(-8deg);
+    position: absolute;
+    display: flex;
+    flex-flow: column wrap;
+    z-index: 2;
+}
+
+.testimonialsClicked {
+    width: 60vh;
+    height: 95vh;
+    transform: rotate(0deg);
+    font-size: 50vh;
+}
+
+.testimonials h1 {
+    font-family: Kingthings Extortion;
+    color: #131212;
+    width: 50vh;
+    height: 10vh;
+    margin: 5% auto;
+    transform: rotate(-3deg);
+    font-size: 6.5vh;
+    position: relative;
+    text-align: center;
+    z-index: inherit;
+}
+
+.testimonials img {
+    width: 75%;
+    height: 20vh;
+    margin: 5% auto;
+    transform: rotate(11deg);
+    z-index: inherit;
+}
+
+.testimonials p {
+    font-family: 'CF PunkRockShow';
+    font-style: italic;
+    font-size: 2.5vh;
+    text-align: justify;
+    width: 90%;
+    height: 40vh;
+    margin:  77% auto 23%;
+    line-height: 165%;
+    transform: rotate(3deg);
+    position: absolute;
+    z-index: inherit;
+    display: none;
+}
+
+/* contact flyer */
+.contact {
+    background: linear-gradient(#f0f065,#cde98a, #90c192);
+    width: 54vh;
+    height: 82vh;
+    transform: rotate(1deg);
+    border: 2px solid #FFFFFF;
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    font-family: QuentinCaps;
+    text-align: center;
+    align-items: center;
+}
+
+.contactClicked {
+    width: 60vh;
+    height: 95vh;
+    transform: rotate(0deg);
+}
+
+.contact h1 {
+    color: #131212;
+    width: 50vh;
+    height: 5vh;
+    margin: 3% auto;
+    font-size: 8vh;
+    position: relative;
+    text-align: center;
+    z-index: inherit;
+}
+
+.contact p {
+    width: 90%;
+    margin: 5% auto;
+    position: relative;
+    z-index: inherit;
+    font-size: 2.8vh;
+}
+
+form {
+    display: grid;
+    grid-template-rows: 20% 60% 20%;
+    grid-template-columns: repeat(2, 49%);
+    grid-gap: 2% 2%;
+    width: 100%;
+    height: 25vh;
+    margin: 2% auto;
+    font-size: 1.25vh;
+}
+
+.message input, textarea {
+    border: 1px solid #90c192;
+    padding: 5px;
+}
+
+#commentName {
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 1;
+    text-align: start;
+}
+
+#commentEmail {
+    grid-row: 1 / span 1;
+    grid-column: 2 / span 1;
+    text-align: start;
+}
+
+#commentComment {
+    grid-row: 2 / span 1;
+    grid-column: 1 / span 2;
+    text-align: start;    
+}
+
+#commentSubmit {
+    grid-row: 3 / span 1;
+    grid-column: 1 / span 2;
+}
+
+@media screen and (max-width: 1000px) {
+    .btn {
+        width: 35vh;
+        margin-left: 8vh;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .btn {
+        width: 30vh;
+        letter-spacing: 1px;
+        margin-left: 7vh;
+    }
+}    
+
+@media screen and (max-width: 890px) {
+    .projects {
+        width: 54vh;
+        height: 82vh;
+        transform: rotate(-13deg);
+    }
+
+    .projectsClicked {
+        width: 60vh;
+        height: 95vh;
+        transform: rotate(0deg);
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .btn {
+        width: 30vh;
+        letter-spacing: 1px;
+        transform: skew(0deg) rotate(0deg);
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    body {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        background-color: lightgrey;
+        background-image: url("assets/tempbackground.jpg");
+        background-size: cover;
+    }
+    aside {
+        display: none;
+    }
+
+    header {
+        display: flex;
+        width: 100%;
+        height: 7.25vh;
+        background-color: transparent;
+    }
+
+    /* hamburger */
+    .navbar.navbar-1 .navbar-toggler-icon {
+        background-image: url('https://mdbootstrap.com/img/svg/hamburger2.svg?color=fff');
+    }
+
+    .navbar {
+        flex-direction: row;
+        padding: 0;
+    }
+
+    #navbarSupportedContent15 {
+        background-color: white;
+        width: 10%;
+    }
+
+    main {
+        width: 100%;
+        height: 90vh;
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-height: 612px) {
+    .testimonials p {
+        font-size: 2.75vh;
+    }
+}
+
+
+
