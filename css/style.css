@@ -117,7 +117,7 @@ a:hover {
     color: #000000;
     width: 50vh;
     height: 5vh;
-    margin: 5% auto;
+    margin: 2% auto;
     font-size: 4vh;
     letter-spacing: 1px;
     text-align: center;
@@ -141,13 +141,32 @@ a:hover {
 
 .about p {
     width: 90%;
-    height: 13vh;
-    margin: 3% auto;
+    /* height: 13vh; */
+    margin: 1% auto;
     text-align: justify;
     position: relative;
     font-size: 3vh;
     letter-spacing: .5px;
     z-index: inherit;
+}
+
+#skills {
+    width: 60%;
+    display: grid;
+    /* grid-template-rows: 25% 25% 25% 25%; */
+    grid-template-columns: repeat(2, 100%);
+    margin-left: 40%; 
+    padding: 0;
+    justify-content: center;
+    position: relative;
+    font-size: 2vh;
+    letter-spacing: .5px;
+    z-index: inherit;
+    list-style: none;
+}
+
+#skills li {
+    width: 70%;
 }
 
 /* projects flyer */
