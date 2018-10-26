@@ -87,7 +87,7 @@ a:hover {
     width: 54vh;
     height: 82vh;
     transform: rotate(6deg);
-    border: 3.5px solid #FFFFFF;
+    border: 3.49px solid #FFFFFF;
     position: absolute;
     z-index: 4;
     display: flex;
@@ -143,7 +143,7 @@ a:hover {
     width: 90%;
     /* height: 13vh; */
     margin: 1% auto;
-    text-align: justify;
+    text-align: center;
     position: relative;
     font-size: 3vh;
     letter-spacing: .5px;
@@ -151,22 +151,18 @@ a:hover {
 }
 
 #skills {
-    width: 60%;
+    width: 100%;
     display: grid;
     /* grid-template-rows: 25% 25% 25% 25%; */
-    grid-template-columns: repeat(2, 100%);
-    margin-left: 40%; 
+    grid-template-columns: repeat(2, 50%);
+    margin: 4% auto; 
     padding: 0;
-    justify-content: center;
+    text-align: center;
     position: relative;
-    font-size: 2vh;
+    font-size: 2.28vh;
     letter-spacing: .5px;
     z-index: inherit;
     list-style: none;
-}
-
-#skills li {
-    width: 70%;
 }
 
 /* projects flyer */
@@ -327,9 +323,9 @@ a:hover {
 form {
     display: grid;
     grid-template-rows: 20% 60% 20%;
-    grid-template-columns: repeat(2, 49%);
-    grid-gap: 2% 2%;
-    width: 100%;
+    /* grid-template-columns: repeat(2, 50%); */
+    grid-gap: 1% 1%;
+    width: 95%;
     height: 25vh;
     margin: 2% auto;
     font-size: 1.25vh;

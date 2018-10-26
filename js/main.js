@@ -13,13 +13,11 @@ $('#about').on('click', function() {
 
 $('#aboutNav').on('click', function() {
     $('.about').css("z-index", zFlyers.length++);
-
 });
 
 $('#projects').on('click', function() {
     $('.projects').css("z-index", zFlyers.length++)
     $('.projects').toggleClass('projectsClicked');
-    console.log('check')
 });
 
 $('#projectsNav').on('click', function() {
